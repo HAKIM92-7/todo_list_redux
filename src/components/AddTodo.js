@@ -18,7 +18,19 @@ const AddTodo = () => {
 
         <div>
             <input type="text" value={newTask} onChange={onChange} />
-            <button onClick= {() => dispatch(addTodo(newTask)) }>add task</button>
+            <button onClick= {() => {
+                
+                if (newTask!=="") 
+                {dispatch(addTodo(newTask));
+                setNewTask('');
+                }
+                else {
+
+                    alert('please enter a task to add !')
+                }
+                
+                
+                }}>add task</button>
         </div>
     )
 }

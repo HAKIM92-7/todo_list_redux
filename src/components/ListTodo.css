@@ -1,0 +1,17 @@
+.task {
+
+display: flex;
+margin-top: 20px;
+margin-bottom: 30px;
+justify-content: space-between;
+background-color: grey ;
+color: azure;
+align-items: center;
+
+
+}
+ .task p {
+
+margin-left: 5px;
+
+ }
